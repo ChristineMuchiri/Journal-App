@@ -8,3 +8,8 @@ a secure journal app
  cd my-journal
  npm install 
  npm run dev
+
+ ## initialize authorization and authentication
+npm install aws-amplify
+amplify init //initializing amplify project
+
