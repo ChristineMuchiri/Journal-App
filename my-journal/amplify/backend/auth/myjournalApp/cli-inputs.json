@@ -1,0 +1,63 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "resourceNameTruncated": "myjourdb4eb8ac",
+    "userPoolName": "journalAppUsers",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email",
+      "name"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "profile",
+      "email",
+      "name"
+    ],
+    "userpoolClientReadAttributes": [
+      "email",
+      "name"
+    ],
+    "userpoolClientLambdaRole": "myjourdb4eb8ac_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": true,
+    "sharedId": "db4eb8ac",
+    "resourceName": "myjournalApp",
+    "authSelections": "userPoolOnly",
+    "useDefault": "manual",
+    "usernameAttributes": [
+      "email"
+    ],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": {
+      "CustomMessage": [
+        "verification-link"
+      ]
+    },
+    "hostedUI": true,
+    "hostedUIDomainName": "myjournalapp",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"implicit\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://cuttly.space/\"],\"LogoutURLs\":[\"https://myjournalapp/\"]}",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "verificationBucketName": "myjournalappverificationbucket",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}

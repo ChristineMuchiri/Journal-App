@@ -9,7 +9,22 @@
       "UnauthRoleName": "amplify-myjournal-dev-33794-unauthRole",
       "StackName": "amplify-myjournal-dev-33794",
       "StackId": "arn:aws:cloudformation:us-east-1:025066266149:stack/amplify-myjournal-dev-33794/22b8ae80-4780-11f0-bfb3-0affd196613d",
-      "AmplifyAppId": "d31psv4p8mazs2"
+      "AmplifyAppId": "d31psv4p8mazs2",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-myjournal-dev-33794-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "myjournalApp": {}
+      },
+      "function": {
+        "myjournalAppCustomMessage": {
+          "REDIRECTURL": "https://cuttly.space",
+          "EMAILSUBJECT": "Confirmation email",
+          "EMAILMESSAGE": "Click this to confirm your email",
+          "deploymentBucketName": "amplify-myjournal-dev-33794-deployment",
+          "s3Key": "amplify-builds/myjournalAppCustomMessage-3459685a6e50752b4b64-build.zip"
+        }
+      }
     }
   }
 }
