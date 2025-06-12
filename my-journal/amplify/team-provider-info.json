@@ -17,12 +17,10 @@
         "myjournalApp": {}
       },
       "function": {
-        "myjournalAppCustomMessage": {
-          "REDIRECTURL": "https://cuttly.space",
-          "EMAILSUBJECT": "Confirmation email",
-          "EMAILMESSAGE": "Click this to confirm your email",
-          "deploymentBucketName": "amplify-myjournal-dev-33794-deployment",
-          "s3Key": "amplify-builds/myjournalAppCustomMessage-3459685a6e50752b4b64-build.zip"
+        "myjournalAppDefineAuthChallenge": {},
+        "myjournalAppCreateAuthChallenge": {},
+        "myjournalAppVerifyAuthChallengeResponse": {
+          "RECAPTCHASECRET": "meoow"
         }
       }
     }

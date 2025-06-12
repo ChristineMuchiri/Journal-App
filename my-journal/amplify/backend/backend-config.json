@@ -9,7 +9,25 @@
             "Name"
           ],
           "category": "function",
-          "resourceName": "myjournalAppCustomMessage",
+          "resourceName": "myjournalAppDefineAuthChallenge",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "myjournalAppCreateAuthChallenge",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "myjournalAppVerifyAuthChallengeResponse",
           "triggerProvider": "Cognito"
         }
       ],
@@ -39,50 +57,28 @@
     }
   },
   "function": {
-    "myjournalAppCustomMessage": {
+    "myjournalAppCreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "myjournalAppDefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "myjournalAppVerifyAuthChallengeResponse": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_myjournalAppCustomMessage_EMAILMESSAGE": {
+    "AMPLIFY_function_myjournalAppVerifyAuthChallengeResponse_RECAPTCHASECRET": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "myjournalAppCustomMessage"
-        }
-      ]
-    },
-    "AMPLIFY_function_myjournalAppCustomMessage_EMAILSUBJECT": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "myjournalAppCustomMessage"
-        }
-      ]
-    },
-    "AMPLIFY_function_myjournalAppCustomMessage_REDIRECTURL": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "myjournalAppCustomMessage"
-        }
-      ]
-    },
-    "AMPLIFY_function_myjournalAppCustomMessage_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "myjournalAppCustomMessage"
-        }
-      ]
-    },
-    "AMPLIFY_function_myjournalAppCustomMessage_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "myjournalAppCustomMessage"
+          "resourceName": "myjournalAppVerifyAuthChallengeResponse"
         }
       ]
     }
