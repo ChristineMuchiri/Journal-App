@@ -21,3 +21,7 @@ amplify add auth
 * enable third-pary providers
 To enable federate login configure them first
 https://docs.amplify.aws/gen1/react/build-a-backend/auth/add-social-provider/#social-providers-and-federation
+
+#amplify update auth
+
+# using Amplify Authenticator instead of Amplify libraries

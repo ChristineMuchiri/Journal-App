@@ -15,13 +15,6 @@
     "categories": {
       "auth": {
         "myjournalApp": {}
-      },
-      "function": {
-        "myjournalAppDefineAuthChallenge": {},
-        "myjournalAppCreateAuthChallenge": {},
-        "myjournalAppVerifyAuthChallengeResponse": {
-          "RECAPTCHASECRET": "meoow"
-        }
       }
     }
   }

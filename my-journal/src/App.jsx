@@ -1,18 +1,13 @@
-import './App.css';
-import { Amplify } from 'aws-amplify';
-import { withAuthenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
-import config from './amplifyconfiguration.json';
-Amplify.configure(config);
+// src/App.jsx
+import React from 'react';
+import HostedUILogin from './components/HostedUILogin'; // This component now acts as the central auth gate
 
-function App({signOut, user}) {
-
+function App() {
   return (
-    <>
-      <h1>Hello {user.username}</h1>
-      <button onClick={signOut}>Sign out</button>
-    </>
-  )
+    // HostedUILogin will handle the authentication flow
+    // and conditionally render your main application content or redirect.
+    <HostedUILogin />
+  );
 }
 
-export default withAuthenticator(App);
+export default App;

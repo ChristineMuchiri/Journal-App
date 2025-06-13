@@ -1,0 +1,64 @@
+/* Basic reset/base styles for better consistency */
+body {
+    margin: 0;
+    font-family: sans-serif; /* Or your preferred font */
+}
+
+.login-container {
+    min-height: 100vh;
+    background-color: #000000; /* bg-black */
+    color: #FFFFFF; /* text-white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.login-message {
+    margin-bottom: 1rem; /* mb-4 */
+    color: #9CA3AF; /* text-gray-400 */
+}
+
+.sign-in-button {
+    background-color: #6D28D9; /* bg-purple-700 */
+    color: #FFFFFF; /* text-white */
+    padding: 0.75rem 1.5rem; /* px-6 py-3 */
+    border-radius: 0.25rem; /* rounded */
+    font-weight: 600; /* font-semibold */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; /* For hover effect */
+}
+
+.sign-in-button:hover {
+    background-color: #5B21B6; /* hover:bg-purple-800 */
+}
+
+.signed-in-title {
+    font-size: 1.25rem; /* text-xl */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.username-display {
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.sign-out-button {
+    background-color: #DC2626; /* bg-red-600 */
+    color: #FFFFFF; /* text-white */
+    padding: 0.5rem 1.5rem; /* px-6 py-2 */
+    border-radius: 0.25rem; /* rounded */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; /* For hover effect */
+}
+
+.sign-out-button:hover {
+    background-color: #B91C1C; /* hover:bg-red-700 */
+}

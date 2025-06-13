@@ -7,6 +7,7 @@ import App from './App.jsx'
 import { Amplify } from 'aws-amplify'
 import config from './amplifyconfiguration.json'
 
+
 Amplify.configure(config)
 
 createRoot(document.getElementById('root')).render(
