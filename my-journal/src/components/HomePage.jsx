@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React from 'react';
 
 export default function HomePage({user, signOut}) {
